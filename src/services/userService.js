@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/users";
+const API_URL = "https://react-user-management-app-lgfg.onrender.com";
 
 export const getUsers = async () => {
   const response = await fetch(API_URL);
