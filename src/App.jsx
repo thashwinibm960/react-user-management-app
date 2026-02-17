@@ -125,21 +125,22 @@ const [formData, setFormData] = useState(initialFormState);
             mt: 2,
           }}
         >
-          {formFields.map((field) => (
-              <TextField
-                key={field.name}
-                name={field.name}
-                type={field.type}
-                label={field.label}
-                value={formData[field.name] || ""}
-                onChange={handleChange}
-                fullWidth
-                margin="normal"
-                slotProps={
-                  field.type === "date" ? { shrink: true } : undefined
-                }
-              />
-            ))}
+                  {formFields.map((field) => (
+          <div key={field.name} style={{ marginBottom: "1rem" }}>
+            <label htmlFor={field.name} style={{ marginRight: "0.5rem", fontWeight: 500 }}>
+              {field.label}:
+            </label>
+            <TextField
+              id={field.name}
+              name={field.name}
+              type={field.type}
+              placeholder={field.label} // optional, you can keep it empty
+              value={formData[field.name] || ""}
+              onChange={handleChange}
+              size="small"
+            />
+          </div>
+        ))}
 
           <Button
             variant="contained"
