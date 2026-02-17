@@ -126,22 +126,20 @@ const [formData, setFormData] = useState(initialFormState);
           }}
         >
           {formFields.map((field) => (
-            <TextField
-              key={field.name}
-              name={field.name}
-              type={field.type}
-              label={field.label}
-              value={formData[field.name] || ""}
-              onChange={handleChange}
-              fullWidth
-              margin="normal"
-              slotProps={{
-                inputLabel: {
-                  shrink: field.type === "date",
-                },
-              }}
-            />
-          ))}
+              <TextField
+                key={field.name}
+                name={field.name}
+                type={field.type}
+                label={field.label}
+                value={formData[field.name] || ""}
+                onChange={handleChange}
+                fullWidth
+                margin="normal"
+                slotProps={
+                  field.type === "date" ? { shrink: true } : undefined
+                }
+              />
+            ))}
 
           <Button
             variant="contained"
