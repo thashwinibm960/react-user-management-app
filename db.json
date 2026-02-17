@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "3827",
+      "firstName": "Thashwini",
+      "lastName": "BM",
+      "phone": "7338456766",
+      "email": "thashwinibm960@gmail.com"
+    },
+    {
+      "id": "bfc2",
+      "firstName": "Thashwini",
+      "lastName": "bm",
+      "phone": "7338456766",
+      "email": "thashwinibm960@gmail.com"
+    },
+    {
+      "id": "9aa3",
+      "firstName": "Thashwini",
+      "lastName": "B.M",
+      "phone": "7338456766",
+      "email": "thashwinibm960@gmail.com",
+      "dob": "2002-08-30"
+    },
+    {
+      "id": "7e2b",
+      "firstName": "Thashwini",
+      "lastName": "B.M",
+      "phone": "7338456766",
+      "email": "thashwinibm960@gmail.com",
+      "dob": "2021-09-22"
+    }
+  ]
+}
