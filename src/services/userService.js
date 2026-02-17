@@ -1,4 +1,4 @@
-const API_URL = "https://react-user-management-app-lgfg.onrender.com";
+const API_URL = "https://react-user-management-app-lgfg.onrender.com/users";
 
 export const getUsers = async () => {
   const response = await fetch(API_URL);
